@@ -20,7 +20,7 @@ app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({ extended: true }));
 
 var store = new MongoDBStore({
-  uri: "mongodb+srv://luanluan:123@cluster0.dlj4r.mongodb.net/?retryWrites=true&w=majority",
+  uri: "myMongodbServer",
   databaseName: "connect_mongodb_session_test",
   collection: "mySessions",
 });
